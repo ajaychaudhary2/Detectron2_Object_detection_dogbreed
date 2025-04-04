@@ -82,7 +82,7 @@ def get_highest_conf_bbox(image_path):
 
             # Draw bounding box and label
             cv2.rectangle(image, (x1, y1), (x2, y2), (0, 0, 255), 2)  # Red bbox
-            cv2.putText(image, f"{class_label} ({confidence:.2f})", (x1, y1 - 10),
+            cv2.putText(image, f"{class_label} ", (x1, y1 - 10),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
 
             # Save and return path of processed image
